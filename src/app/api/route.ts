@@ -10,7 +10,7 @@ function sleep(timeMs: number) {
 
 export async function GET(request: Request) {
   // simulate latency
-  await sleep(5_000);
+  await sleep(1_000);
 
   const url = new URL(request.url);
   const search = url.searchParams.get('search');
