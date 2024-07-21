@@ -23,9 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-rs-theme="reshaped" data-rs-color-mode="dark">
       <body className={inter.className}>
-        <div className="p-7">
           <Providers env={parsedEnv}>{children}</Providers>
-        </div>
       </body>
     </html>
   );

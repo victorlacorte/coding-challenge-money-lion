@@ -22,7 +22,7 @@ function Search() {
   }
 
   return (
-    <main>
+    <main className="p-7 max-w-xl mx-auto">
       <div className="mb-5">
         <SearchForm onSubmit={handleSubmit} />
       </div>

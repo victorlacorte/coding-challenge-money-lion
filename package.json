@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "format:check": "prettier . --check",
-    "format:write": "prettier . --write"
+    "format:write": "prettier . --write",
+    "check-types": "tsc --noEmit",
+    "ci": "pnpm run format:check && pnpm run check-types && pnpm run lint"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.51.11",
